@@ -15,6 +15,7 @@ function checkPrime(number){
             console.log(number + ' is not a prime number');
         }
     }
-
 }
-checkPrime(3);
+// checkPrime(3);Tota
+
+// TO DO!!! b.	akes in n (numbers) as a parameter and returns first n prime numbers
