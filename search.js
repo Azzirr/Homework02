@@ -21,8 +21,8 @@ function binarySearch(target){
 }
 
 //binarySearch(5);
-let array = [2, 4, 1, 3];
 function selectionSort(){
+//  let array = [2, 4, 1, 3];
     let array = [2, 4, 1, 3, 9, 7, 22, 15, 11];
 
     for(let i = 0; i < array.length - 1; i++){
@@ -38,4 +38,14 @@ function selectionSort(){
     }
     console.log(array);
 }
-selectionSort()
+// selectionSort()
+
+function mergeSort(){
+    let array = [2, 8, 5, 3, 1, 7, 4, 6];
+    let middleIndex = Math.floor(array.length / 2); //4
+    let leftSide = array.slice(0, middleIndex); // 2,8,5,3
+    let rightSide = array.slice(middleIndex); // 1,7,4,6
+    let arrays = new Array;
+    
+}
+mergeSort()

@@ -11,7 +11,7 @@ function arrayCheck(){
         } 
     }
 }
-arrayCheck();
+// arrayCheck();
 
 function firstLastElement(){
     let firstElement = sampleArray.slice(0,1);
@@ -19,19 +19,19 @@ function firstLastElement(){
     let sum = parseInt(firstElement) + parseInt(lastElement);
     console.log(sum);
 }
-firstLastElement()
+// firstLastElement()
 // TO DO!!!
-function reverseArrayWithoutReverseWhyDude(){
-    let output = new Array;
-    for(let i = 0; i < sampleArray.length; i++){
-        let sliceArray = sampleArray.slice(i, i + 1);
-        output.unshift(sliceArray)
-        if(i === sampleArray.length - 1){
-            console.log(output);
-        }
+function reverseArrayWithoutReverse(){
+    let array = [1, 2, 3, 4, 5];
+    let reversedArray = new Array;
+    for(let i = array.length - 1; i >= 0; i--){
+        let reverse = array.pop();
+        reversedArray.push(reverse);
     }
+    console.log(reversedArray)
+    
 }
-// reverseArrayWithoutReverseWhyDude()
+reverseArrayWithoutReverse()
 function theBiggestNumber(){
     let attempts = 3;
     let array = [];
@@ -43,13 +43,13 @@ function theBiggestNumber(){
     }
     console.log('The lowest number from given array is ' + Math.min(...array))
 }
-theBiggestNumber()
+// theBiggestNumber()
 
 function firstWayToReturnArrayInRandomOrder(){
     let output = sampleArray.sort((a, b) => 0.5 - Math.random());
     console.log('First way to shuffle array ' + output)
 }
-firstWayToReturnArrayInRandomOrder();
+// firstWayToReturnArrayInRandomOrder();
 
 function secondWayToReturnArrayInRandomOrder(){
     for(let i = sampleArray.length - 1; i > 0; i--){
@@ -60,7 +60,7 @@ function secondWayToReturnArrayInRandomOrder(){
     }
     console.log(sampleArray)
 }
-secondWayToReturnArrayInRandomOrder();
+// secondWayToReturnArrayInRandomOrder();
 
 function sumOddItems(){
     let sum = null;
@@ -71,7 +71,7 @@ function sumOddItems(){
     }
     console.log(sum);
 }
-sumOddItems()
+// sumOddItems()
 
 function addAndSubtract(){
     let sumOdd = null;
@@ -89,7 +89,7 @@ function addAndSubtract(){
     let output = sumEven - sumOdd;
     console.log('Even - odd equals ' + output);
 }
-addAndSubtract()
+// addAndSubtract()
 
 function daysToFriday(){
     const today = new Date();
@@ -102,7 +102,7 @@ function daysToFriday(){
         console.log('Friday was yesterday :( There is 6 days to friday...')
     }
 }
-daysToFriday()
+// daysToFriday()
 
 function getFibonacci(n){
     if(n===0){
