@@ -40,12 +40,16 @@ function selectionSort(){
 }
 // selectionSort()
 
-function mergeSort(){
-    let array = [2, 8, 5, 3, 1, 7, 4, 6];
-    let middleIndex = Math.floor(array.length / 2); //4
-    let leftSide = array.slice(0, middleIndex); // 2,8,5,3
-    let rightSide = array.slice(middleIndex); // 1,7,4,6
-    let arrays = new Array;
+function mergeSort(array){
+    if (array.length <= 1){
+        return array;
+    }
     
+    const middleIndex = Math.floor(array.length / 2);
+    const leftArray = array.slice(0, middleIndex);
+    const rightArray = array.slice(middleIndex);
+
+    
+
 }
-mergeSort()
+mergeSort([1, 4, 7, 2, 9, 6, 5, 3])
