@@ -1,5 +1,6 @@
 const math = require('./math');
-let fs = require('fs');
+const os = require('os');
+const fs = require('fs');
 let a = fs.readFileSync('a.txt');
 let b = fs.readFileSync('b.txt');
 // console.log('3 + 5 = ', math.add(3, 5));
@@ -19,4 +20,39 @@ function exerciseEight(){
     fs.appendFileSync('result.txt', resultDiv.toString() + '\n')
 
 }
-exerciseEight()
+// exerciseEight()
+
+// function exerciseTen(){
+//     let a = process.argv[]
+// }
+// exerciseTen();
+
+
+
+fs.readFile('a.txt', 'utf8', function (err, data) {
+    if (err) {
+      console.log(err)
+    } else {
+        return data
+    }
+});
+fs.readFile('b.txt', 'utf8', function (err, data) {
+    if (err) {
+      console.log(err)
+    } else {
+        return data
+    }
+});
+
+var arguments = process.argv
+function add(x, y) {
+    if(x, y){
+        return parseInt(x)+parseInt(y) 
+    } else {
+        console.log('Need more parameters')
+    }
+}
+  
+var sum = add(arguments[2], arguments[3])
+  
+console.log(sum)
